@@ -24,11 +24,11 @@ ext_modules = cythonize(extentions)
 
 setup(name='pymuller',
       version=version,
-      description='Muller's root finding method',
+      description="Muller's root finding method",
       long_description=long_description,
       # Get more strings from http://www.python.org/pypi?%3Aaction=list_classifiers
       classifiers=[
-          "Development Status :: 1 - Planning",
+          "Development Status :: 3 - Alpha",
           "Intended Audience :: Developers",
           "Intended Audience :: Science/Research",
           "Programming Language :: Python",
@@ -36,7 +36,7 @@ setup(name='pymuller',
           "Topic :: Scientific/Engineering :: Mathematics",
           "Topic :: Software Development :: Libraries :: Python Modules",
       ],
-      keywords='root finding, Muller's method',
+      keywords="root finding, Muller's method",
       author='Munehiro Nishida',
       author_email='mnishida@hiroshima-u.ac.jp',
       url='http://home.hiroshima-u.ac.jp/mnishida/',
@@ -47,6 +47,8 @@ setup(name='pymuller',
       zip_safe=False,
       install_requires=[
           'setuptools',
+          'numpy',
+          'scipy'
           # -*- Extra requirements: -*-
           # 'numpy>=1.7',
           # 'scipy>=0.12',
